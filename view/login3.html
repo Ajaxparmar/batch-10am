@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function login(){
+        let username = 'vijay@gmail.com'
+        let password = 'vijay@123'
+
+        let user=prompt("Enter the username")
+        let pass=prompt("Enter the password")
+
+        if (user.length == 0 || user.length <= 8 || pass.length) {
+            return console.log("name is too short or zero letter");
+        }
+
+        if (user === username) {
+            if (pass == password) {
+                console.log("Welcome user");
+            }
+            else {
+                console.log("plz check the password");
+
+            }
+        }
+        else {
+            console.log("Chekc the username");
+
+        }
+    } 
+
+    let options= Number(prompt("Press 1 for new game ,press 2 for resume ,press 3 from restart,pres 4 for exit"))
+
+    switch(options)
+        {
+            case 1:
+                console.log("New game start");
+            break;
+            case 2:
+                console.log("Resume game");
+            break;
+            case 3:
+                console.log("Game restarted");
+            break;
+            case 4:
+                console.log("Exit");
+                
+            break;
+            default:
+                console.log("Invalid input");
+                
+        }
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

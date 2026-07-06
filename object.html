@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let obj={
+        //     name:"vijay",
+        //     age:23,
+        //     city:"pune",
+        //     disabled:true,
+        //     subjects:["maths","science","english"],
+        //     myfun:function sayHelo(){
+        //         return "Hello class"
+        //     },
+        //     newfun:(()=>{
+        //         return "Hello class arrow"
+        //     }),
+        //     edu:{
+        //         degree:"BE",
+        //         year:2023
+        //     }}
+        
+        //     console.log(obj.subjects[1]);
+
+        //     console.log(obj.myfun());
+
+
+      
+            
+    //    let stundet= {
+    //         name:"vijay",
+    //         class:12,
+    //         subjects:["maths","science","english"],
+    //         phone:1234567890,
+    //     }
+            
+
+    let stundetDetails=[
+        {
+                name:"vijay",
+                class:12,
+                subjects:["maths","science","english"],
+                phone:1234567890,
+        },
+        {
+            name:"ajay",
+                class:10,
+                subjects:["maths","science","english"],
+                phone:1234567890,
+        },
+        {
+            name:"sanjay",
+                class:11,
+                subjects:["maths","science","english"],
+                phone:1234567890,
+        },
+
+
+    ]
+
+    // for(let i=0;i<stundetDetails.length;i++){
+    //     console.log(stundetDetails[i].name);
+    // }
+
+    // for(let i of stundetDetails){
+    //     console.log(i);
+    // }
+
+    // for(let i in stundetDetails){
+    //     console.log(stundetDetails[i]);
+    // }
+
+   stundetDetails.forEach((value, index)=>{
+         value.class=value.class+1   
+    })
+
+    let newarray=stundetDetails.map((value, index)=>{
+         value.class=value.class+1 
+    })
+
+    console.log(newarray);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

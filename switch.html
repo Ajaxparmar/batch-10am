@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let myarray = [1, "vijay", 2, 3, 4];
+
+
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        console.log(fruits.includes('date'));
+
+        console.log(fruits.indexOf('Apple'));
+
+        fruits[fruits.indexOf('Apple')] = 'Grapes';
+
+        const newArr = fruits.join();
+        console.log("my array", newArr);
+
+
+
+
+        const marvel_heros = ["thor", "Ironman", "spiderman"]
+        const dc_heros = ["superman", "flash", "batman"]
+
+        // const allheros = marvel_heros.concat(dc_heros);
+
+        // marvel_heros.push(dc_heros)
+
+
+        let myallheros = [...marvel_heros, ...dc_heros]
+
+        console.log("all heros", myallheros);
+        
+
+        let newarrays= Array.isArray(["vijay"])
+₹
+        console.log("newarrays",newarrays);
+        
+
+
+
+        // console.log("all heros",marvel_heros);
+
+
+        let anarry=[4,5,6,[4,5,6,[1,2,[4,5,6,7],3]]]
+        console.log(anarry[3][3][1]);
+        
+         anarry= anarry.flat(Infinity)
+         console.log(anarry);
+
+
+
+         
+        
+
+
+
+
+
+
+        // At position 2, add "Lemon" and "Kiwi"
+        console.log(fruits);
+
+
+        console.log(fruits.splice(2, 2, "Lemon", "Kiwi"));
+
+        console.log(fruits);
+
+
+
+        // let splice1 = myarray.splice(2, 2, "ravi", "sumit")
+
+        // console.log("splice", splice1);
+
+
+
+
+        // let slice1=myarray.slice(2,4)
+
+        // console.log("slice",slice1);
+
+
+        // console.log(myarray[3]);
+
+        // let newarray = new Array(1,2,3,4,5);
+        // console.log(newarray);
+
+        let newfinal = [...myarray]
+
+
+        myarray[1] = 'ravi'
+
+        console.log("old array", myarray);
+        console.log("final array", newfinal);
+
+        myarray.push("sumit")
+
+        console.log("old array", myarray);
+
+        myarray.pop()
+        console.log("old array", myarray);
+
+        myarray.shift()
+        console.log("old array", myarray);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

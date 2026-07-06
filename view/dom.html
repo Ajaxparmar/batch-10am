@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 class="heading">Hello class this is heading 1</h1>
+    <h1 class="heading">Hello class this is heading 2</h1>
+    <h1 class="heading">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur ea quod, vitae vel ut repudiandae nam praesentium placeat eaque in hic quibusdam ipsa officia expedita. Repellendus optio cupiditate nulla.</p>
+    </h1>
+
+    <button onclick="timer()">click</button>
+
+    <script>
+
+        // const newElement = document.getElementsByClassName("heading")
+        const newElement = document.querySelector(".heading")
+        console.log(newElement[1]);
+
+        const mybtn= document.getElementById("btn")
+
+        console.log(mybtn);
+        mybtn.style.backgroundColor = "red"
+        mybtn.style.color = "white"
+        mybtn.style.padding = "20px"
+        
+
+        function myfun(){
+            console.log("move");
+            
+            const element = document.getElementsByTagName("h1")
+            element[2].innerHTML = "Hello class this is heading 3"
+            element[2].style.color = "red"
+            element[2].style.backgroundColor = "yellow"
+            element[2].style.padding = "50px"
+        }
+
+       
+        function timer()
+            {
+                let count=0
+                setInterval(()=>{
+                    count++
+                    console.log(count);
+                    
+                },100)
+            }
+
+
+
+    </script>
+
+</body>
+
+</html>
